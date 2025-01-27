@@ -34,7 +34,7 @@ from pycaret.datasets import get_data
 from pycaret.regression import *
 
 insuranceDataSet = get_data("insurance")
-s = setup(data = insuranceDataSet, target='charges', silent=True)
+s = setup(data = insuranceDataSet, target='charges', verbose=False)
 cm = compare_models()
 ```
 ---
